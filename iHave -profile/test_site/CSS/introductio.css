@@ -27,6 +27,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+      display: block;
     }
   }
 
@@ -93,7 +94,7 @@
 }
 
 #profileTitle h1 {
-  padding: 5% 5%;
+  padding: 22px 5%;
   text-align: left;
   font-size: 32px;
   font-weight: 500;
