@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+#introPic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#introPic img {
+  aspect-ratio: 2.5;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+}
+
+@media screen and (max-width: 480px) {
+    #introPic img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+/*----------------------------------------------------
+　Introduction
+----------------------------------------------------*/
+#Instructor {
+  width: 100%;
+  background-color: #FFF7EB;
+}
+
+#InstructorTitle {
+  width: 100%;
+}
+
+#InstructorTitle h1 {
+  padding: 1% 5% 0 5%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#InstructorDetail {
+  width: 100%;
+}
+
+#InstructorDetail p {
+  padding: 1% 5% 2% 5%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+@media screen and (max-width:480px)  {
+  .pc {
+    display: none !important;
+  }
+
+  #Instructor {
+    padding: 5% 0;
+  }
+  #InstructorTitle h1 {
+    font-size: 30px;
+  }
+
+  #InstructorDetail p {
+    letter-spacing: 0.05em;
+  }
+} 
+
+/*----------------------------------------------------
+　Profile
+----------------------------------------------------*/
+#profile {
+  width: 100%;
+}
+
+#profileTitle {
+  width: 100%;
+}
+
+#profileTitle h1 {
+  padding: 5% 5%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #bc978c;;
+}
+
+#profilePic {
+  width: 100%;
+}
+
+#profilePic img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#profileInfTitle {
+  padding: 10px 5%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#name {
+  padding: 0 5%;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#insta {
+  margin: 20px 0 40px 0;
+}
+
+#insta i {
+  padding: 10px 0 10px 5%;
+  color: #4d4d4d;
+}
+
+#insta a{
+  padding: 10px 0 10px 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#borderLine {
+  margin: 0 5%;
+  border: 1px solid #4d4d4d;
+}
+
+.usInfo {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.us {
+  padding: 10px 5%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+.career {
+  padding: 10px 5%;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  color: #4d4d4d; 
+}
+
+#important {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+#importantTitle h1 {
+  padding: 2% 5%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#importantDetail {
+  width: 100%;
+}
+
+#importantDetail ol {
+  padding: 0 7%;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#importantDetail ol li {
+  margin: 15px 0;
+}
+
+@media screen and (max-width:480px)  {
+  .pc {
+    display: none !important;
+  }
+
+  #profileTitle h1 {
+    font-size: 30px;
+  }
+
+  #profilePic img {
+    height: 100%;
+  }
+
+  #profileInfTitle {
+    font-size: 18px;
+  }
+
+  #name {
+    font-size: 30px;
+  }
+
+  .us {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  #importantTitle h1 {
+    font-size: 30px;
+  }
+
+  #importantDetail ol {
+    padding: 0 11%;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  #important {
+    padding: 10% 0;
+  }
+}
+
+#blank {
+  height: 15vh;
+}
