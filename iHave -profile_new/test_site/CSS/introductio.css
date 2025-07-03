@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+#introPic {
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#introPic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+    #introPic {
+      margin-top: 0;
+    }
+
+    #introPic img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+/*----------------------------------------------------
+　Introduction
+----------------------------------------------------*/
+#Instructor {
+  width: 100%;
+  padding: 1% 0 3% 0;
+  background-color: #FFF7EB;
+}
+
+#InstructorTitle {
+  width: 100%;
+}
+
+#InstructorTitle h1 {
+  padding: 1% 5% 0 5%;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#InstructorDetail {
+  width: 100%;
+}
+
+#InstructorDetail p {
+  padding: 3% 5% 2% 5%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+.pc {
+    display: block !important;
+  }
+
+  .sp {
+    display: none !important;
+  }
+
+@media screen and (max-width:480px)  {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+
+  #Instructor {
+    padding: 5% 0;
+  }
+  #InstructorTitle h1 {
+    font-size: 30px;
+  }
+
+  #InstructorDetail p {
+    letter-spacing: 0.05em;
+  }
+} 
+
+/*----------------------------------------------------
+　Profile
+----------------------------------------------------*/
+#profile {
+  width: 100%;
+}
+
+#profileTitle {
+  width: 100%;
+  background-color: #FFF7EB;
+}
+
+@media screen and (max-width:480px)  {
+  #profileTitle {
+    background-color: #FFFFFF;
+  }
+} 
+
+#profileTitle h1 {
+  padding: 22px 5%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;;
+}
+
+#con {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#profilePic {
+  width: 50%;
+  height: 50%;
+  order: 2;
+}
+
+.InstPC {
+  padding: 20% 20%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+#main {
+  width: 100%;
+  flex: 1;
+  order: 1;
+}
+
+#profileInfTitle {
+  padding-top: 10%;
+  padding-left: 20%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#name {
+  padding-top: 20px;
+  padding-left: 20%;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#insta {
+  margin: 20px 0 40px 0;
+}
+
+#insta i {
+  padding: 10px 0 10px 20%;
+  color: #4d4d4d;
+}
+
+#insta a{
+  padding: 10px 0 10px 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#borderLine {
+  display: none;
+  margin: 0 5%;
+  border: 1px solid #4d4d4d;
+}
+
+.usInfo {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.us {
+  padding: 10px 0 10px 20%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+.career {
+  padding: 10px 20%;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  color: #4d4d4d; 
+}
+
+.InstSp {
+  display: none;
+}
+
+@media screen and (max-width:480px)  {
+  #profile {
+    margin-bottom: 10%;
+  }
+  #profileTitle h1 {
+    padding: 22px 5%;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #bc978c;;
+  }
+
+  #con {
+    flex-direction: column;
+  }
+
+  #profilePic {
+    width: 100%;
+    order: 1;
+  }
+
+  .InstPC {
+    display: none;
+  }
+
+  .InstSp {
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #main {
+    order: 2;
+  }
+
+  #profileInfTitle {
+    padding: 10px 5%;
+  }
+
+  #name {
+    padding: 0 5%;
+  }
+
+  #insta {
+    margin: 20px 0 40px 0;
+  }
+
+  #insta i {
+    padding: 10px 0 10px 5%;
+    color: #4d4d4d;
+  }
+
+  #insta a{
+    padding: 10px 0 10px 10px;
+  }
+
+  #borderLine {
+    display: block;
+    margin: 0 5%;
+    border: 1px solid #4d4d4d;
+  }
+
+  .usInfo {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .us {
+    padding: 10px 5%;
+  }
+
+  .career {
+    padding: 10px 5%;
+  }
+} 
+
+/*----------------------------------------------------
+　Important
+----------------------------------------------------*/
+#important {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+#importantTitle h1 {
+  padding: 2% 5%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#importantDetail {
+  width: 100%;
+
+}
+
+#importantDetail ol {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #4d4d4d;
+}
+
+#importantDetail ol li {
+  margin: 15px 0;
+}
+
+@media screen and (max-width:480px)  {
+  .pc {
+    display: none !important;
+  }
+
+  #profileTitle h1 {
+    font-size: 30px;
+  }
+
+  #profilePic img {
+    height: 100%;
+  }
+
+  #profileInfTitle {
+    font-size: 18px;
+  }
+
+  /* #name {
+    font-size: 30px;
+  }
+
+  .us {
+    font-size: 15px;
+    line-height: 1.8;
+  } */
+
+  #important {
+    padding: 10% 0;
+  }
+
+  #importantTitle h1 {
+    font-size: 30px;
+  }
+
+  #importantDetail ol {
+    margin: 0 5% 20px 11%;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  #importantDetail ol li {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+}
+
+#blank {
+  height: 15vh;
+}

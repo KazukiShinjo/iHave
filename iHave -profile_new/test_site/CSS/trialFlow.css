@@ -1,0 +1,823 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+　Title
+----------------------------------------------------*/
+#stepTitile {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+  height: 25vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1efeb;
+}
+
+#titile {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10p 0 20px 0;
+}
+
+#subLessonTitle {
+  text-align: center;
+  color: #bc978c;
+  letter-spacing: 0.05em;
+}
+
+#lessonTitle {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+}
+
+#blank {
+  height: 10vh;
+}
+
+@media screen and (max-width:480px)  {
+  #stepTitile {
+    height: 15vh;
+  }
+  #subLessonTitle {
+    margin-top: 20px;
+  }
+  #lessonTitle {
+    margin-bottom: 0;
+  }
+}
+/*----------------------------------------------------
+　Common
+----------------------------------------------------*/
+.step {
+  font-size: 40px;
+  color: #bc978c;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.num {
+  font-size: 50px;
+  font-weight: 400;
+  color: #e4ddd3;
+  letter-spacing: 0.05em;
+}
+
+.subStep {
+  font-size: 32px;
+  font-weight: 400;
+  color: #4d4d4d;
+  letter-spacing: 0.05em;
+}
+
+.discription {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width:480px)  {
+  .step {
+    font-size: 33px;
+  }
+
+  .num {
+    font-size: 40px;
+  }
+
+  .subStep {
+    font-size: 23px;
+  }
+}
+/*----------------------------------------------------
+　Reservation
+----------------------------------------------------*/
+#reservation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f1efeb;
+}
+
+#reservationFlowTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 10% 0 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#reservationDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 20px 10%;
+  gap: 15px;
+  font-family: 'Noto Serif JP',serif;
+  flex: 1;
+  order: 1;
+}
+
+#btnBook {
+  display: flex;
+  padding-top: 50px;
+  padding-right: 20%;
+  order: 2;
+}
+
+#book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  max-width: 320px;
+  height: 50px;
+  padding: 8px 24px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #cbb8b8;
+  border-radius: 32px;
+}
+
+#book:hover {
+  background-color: #a88f8f;
+  transition: background-color 0.3s ease;
+}
+
+.reservationPic{
+  width: 100%;
+}
+
+.reservationPic img{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+@media screen and (max-width:480px)  {
+  #reservation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fafafa; */
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #reservationDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    padding: 20px 5%;
+    gap: 15px;
+    font-family: 'Noto Serif JP',serif;
+  }
+
+  #btnBook {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .reservationPic{
+    width: 100%;
+  }
+  .reservationPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------
+　Access
+----------------------------------------------------*/
+#access {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  align-items: stretch;
+}
+
+#accessContainer {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 2;
+}
+
+#accessFlowTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0 0 10%;
+}
+
+#accessFlowTitle, .num {
+  padding-bottom: 20px;
+}
+
+#accessDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 20px 0 20px 10%;
+  gap: 15px;
+  font-family: 'Noto Serif JP',serif;
+}
+
+#attention {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+#accessPic{
+  width: 40%;
+  height: auto;
+  flex: 1;
+  order: 1;
+}
+
+#accessPic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width:480px)  {
+  #access {
+    flex-direction: column;
+  }
+
+  #accessContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #accessFlowTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 5% 0 5%;
+    gap: 170px;
+    order: 1;
+  }
+
+  #accessFlowTitle .num {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  #accessFlowTitle .step {
+    padding-bottom: 0;
+    flex: 1;
+    order: 1;
+  }
+
+  #accessDetail {
+    padding: 0 5% 30px 5%;
+    gap: 15px;
+    order: 2;
+  }
+
+  #attention {
+    order: 2;
+  }
+
+  #accessPic{
+    width: 100%;
+    height: auto;
+  }
+
+  #accessPic img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------
+　Reception
+----------------------------------------------------*/
+#reception {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  align-items: stretch;
+}
+
+#receptionContainer {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  order: 1;
+}
+
+#receptionFlowTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0 0 10%;
+}
+
+#accessFlowTitle, .num {
+  padding-bottom: 20px;
+}
+
+#receptionDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 20px 5% 0 10%;
+  gap: 15px;
+}
+
+#receptionPic{
+  width: 60%;
+  height: 460px;
+  order: 2;
+}
+
+#receptionPic img{
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+@media screen and (max-width:480px)  {
+  #reception {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #receptionContainer {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+  }
+
+  #receptionFlowTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 5% 0 5%;
+    gap: 20px;
+    order: 1;
+  }
+
+  #receptionFlowTitle .num {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  #receptionFlowTitle .step {
+    padding-bottom: 0;
+    flex: 1;
+    order: 1;
+  }
+
+  #receptionDetail {
+    padding: 5% 5% 30px 5%;
+    gap: 15px;
+    order: 2;
+  }
+
+  #receptionPic{
+    width: 100%;
+    height: auto;
+    order: 1; 
+  }
+
+  #receptionPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------
+　Counseling
+----------------------------------------------------*/
+#Counseling {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  align-items: stretch;
+}
+
+#CounselingPic {
+  width: 100%;
+  height: auto;
+}
+
+#CounselingPic img{
+  top: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#CounselingFlowTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 10% 0 5%;
+}
+
+#CounselingDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 20px 5%;
+  gap: 15px;
+}
+
+@media screen and (max-width:480px)  {
+  #Counseling {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #CounselingContainer {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+  }
+
+  #CounselingFlowTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 5% 0 5%;
+    gap: 20px;
+    order: 1;
+  }
+
+  #CounselingFlowTitle .num {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  #CounselingFlowTitle .step {
+    padding-bottom: 0;
+    flex: 1;
+    order: 1;
+  }
+
+  #CounselingDetail {
+    padding: 5% 5% 30px 5%;
+    gap: 15px;
+    order: 2;
+  }
+
+  #CounselingPic{
+    width: 100%;
+    height: auto;
+    order: 1; 
+  }
+
+  #CounselingPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------
+　Lesson
+----------------------------------------------------*/
+#lesson {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+#lessonContainer {
+  width: 50%;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 2;
+}
+
+#lessonFlowTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0 0 10%;
+}
+
+#lessonFlowTitle, .num {
+  padding-bottom: 20px;
+}
+
+#lessonDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 10px 5% 20px 10%;
+  gap: 15px;
+  font-family: 'Noto Serif JP',serif;
+}
+
+#lessonPic{
+  width: 50%;
+  height: 470px;
+  flex: 1;
+  order: 1;
+}
+
+#lessonPic img{
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+
+@media screen and (max-width:480px)  {
+  #lesson {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #lessonContainer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    order: 2;
+  }
+
+  #lessonFlowTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 5% 0 5%;
+    gap: 20px;
+    order: 1;
+  }
+
+  #lessonFlowTitle .num {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  #lessonFlowTitle .step {
+    padding-bottom: 0;
+    flex: 1;
+    order: 1;
+  }
+
+  #lessonDetail {
+    padding: 5% 5% 30px 5%;
+    gap: 15px;
+    order: 2;
+  }
+
+  #lessonPic{
+    width: 100%;
+    height: auto;
+    order: 1; 
+  }
+
+  #lessonPic img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------
+　Check
+----------------------------------------------------*/
+#check {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+#checkContainer {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  order: 1;
+}
+
+#checkFlowTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0 0 10%;
+}
+
+#checkFlowTitle, .num {
+  padding-bottom: 20px;
+}
+
+#checkDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 10px 5% 20px 10%;
+  gap: 15px;
+  font-family: 'Noto Serif JP',serif;
+}
+
+#checkPic{
+  width: 50%;
+  height: 500px;
+  order: 2;
+}
+
+#checkPic img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media screen and (max-width:480px)  {
+  #check {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #checkContainer {
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+  }
+
+  #checkFlowTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 5% 0 5%;
+    gap: 20px;
+    order: 1;
+  }
+
+  #checkFlowTitle .num {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  #checkFlowTitle .step {
+    padding-bottom: 0;
+    flex: 1;
+    order: 1;
+  }
+
+  #checkDetail {
+    padding: 5% 5% 30px 5%;
+    gap: 15px;
+    order: 2;
+  }
+
+  #checkPic{
+    width: 100%;
+    height: auto;
+    order: 1; 
+  }
+
+  #checkPic img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/*----------------------------------------------------
+　End
+----------------------------------------------------*/
+#end {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#mark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  writing-mode: vertical-rl;
+  font-size: 24px;
+  color: #bc978c;
+}
+
+#picGallery {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 5% 7%;
+  gap: 50px;
+}
+
+#picGallery > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#picGallery img,
+#picGallery video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pc {
+    display: block !important;
+  }
+
+  .sp {
+    display: none !important;
+  }
+
+
+@media screen and (max-width:480px)  {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+
+  #picLeft,
+  #picright {
+    display: none !important;;
+  }
+
+  #picGallery {
+    justify-content: center; /* 中央寄せ */
+    padding: 0;
+    gap: 0;
+  }
+
+  #picGallery video {
+    padding: 5% 15%;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
