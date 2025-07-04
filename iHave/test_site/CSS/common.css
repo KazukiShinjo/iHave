@@ -135,6 +135,7 @@ a {
 
 @media screen and (max-width:480px) {
   #logo {
+    top: 0;
     position: fixed;
     display: block;
     z-index: 5;
@@ -160,7 +161,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 137px; */
     max-width: 320px;
     height: 45px;
     padding: 8px 24px;
@@ -178,6 +178,7 @@ a {
   }
 
   #nav {
+    top: 0;
     position: fixed;
     height: 100%;
     width: 100%;
