@@ -42,20 +42,38 @@ p {
   font-family: 'Noto Serif JP',serif;
 }
 
-@media screen and (max-width:480px) {
+.pc {
+    display: block !important;
+  }
+
+  .sp {
+    display: none !important;
+  }
+
+
+@media screen and (max-width:480px)  {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
   #cancel {
     margin-top: 20%;
   }
 
   h2 {
+    font-size: 23px;
     margin: 5%;
   }
 
   h3 {
+    font-size: 18px;
     margin: 5%;
   }
 
   p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }

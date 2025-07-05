@@ -42,9 +42,11 @@
     height: 15vh;
   }
   #subLessonTitle {
+    font-size: 15px;
     margin-top: 20px;
   }
   #lessonTitle {
+    font-size: 23px;
     margin-bottom: 0;
   }
 }
@@ -82,11 +84,11 @@
 
 @media screen and (max-width:480px)  {
   .step {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .num {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .subStep {

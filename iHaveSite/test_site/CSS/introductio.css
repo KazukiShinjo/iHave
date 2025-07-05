@@ -89,11 +89,11 @@
     padding: 5% 0;
   }
   #InstructorTitle h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   #InstructorDetail p {
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0.05em;
   }
 } 
@@ -231,7 +231,7 @@
   #profileTitle h1 {
     padding: 22px 5%;
     text-align: left;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: 0.05em;
     color: #bc978c;;
@@ -266,7 +266,7 @@
   }
 
   #name {
-    font-size: 30px;
+    font-size: 28px;
     padding: 0 5%;
   }
 
@@ -295,7 +295,7 @@
   }
 
   .us {
-    font-size: 14px;
+    font-size: 13px;
     padding: 10px 5%;
   }
 
@@ -348,7 +348,7 @@
   }
 
   #profileTitle h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   #profilePic img {
@@ -360,11 +360,11 @@
   }
 
   #important {
-    padding: 10% 0;
+    padding: 5% 0 10% 0;
   }
 
   #importantTitle h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #importantDetail ol {
@@ -374,7 +374,7 @@
   }
 
   #importantDetail ol li {
-    font-size: 14px;
+    font-size: 13px;
     margin: 10px 0;
     padding: 0;
   }
